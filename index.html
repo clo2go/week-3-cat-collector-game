@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Collector</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/bootswatch.less" type="text/css" rel="stylesheet">
+    <link href="assets/css/variables.less" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Title: Jumbotron -->
+    <div class="jumbotron">
+        <h1>CatCollector!!</h1> You will be given a random number at the beginnning of the game
+        <br> There are four cats below. By clicking on a crystal you will add a specific amount of points to your local score.
+        <br> You win the game by matching your total score to random number, you lose the game if your score goes above the random number
+        <br> The value of each crystal is hidden from you until you click on it.
+        <br> Each time when the game starts, the game will change the value of each crystal.
+    </div>
+    
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Computer Points</h3>
+  </div>
+  <div class="panel-body">
+    <span class = "computerAnswer">
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">CAAAAAAAAAAATS!!!!!!</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-3">
+    <img src="assets/images/cat1.jpg" alt="cat1" style="width:300px;height:300px;">
+    </div>
+    <div class="col-xs-3">
+    <img src="assets/images/cat2.jpg" alt="cat2" style="width:300px;height:300px;">
+    </div>
+    <div class="col-xs-3">
+    <img src="assets/images/cat3.jpg" alt="cat3" style="width:300px;height:300px;">
+    </div>
+    <div class="col-xs-3">
+    <img src="assets/images/cat4.jpg" alt="cat4" style="width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Your Total Score is: </h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Record
+  </a>
+  <a href="#" class="list-group-item">Wins: 0
+  </a>
+  <a href="#" class="list-group-item">Losses: 0
+  </a>
+</div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
