@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Crystal Collector</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Cat Collector</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -12,66 +17,94 @@
 </head>
 
 <body>
-    <!-- Title: Jumbotron -->
-    <div class="jumbotron text-center">
-        <h1>CatCollector!!</h1> You will be given a random number at the beginnning of the game
-        <br> There are four cats below. By clicking on a crystal you will add a specific amount of points to your local score.
-        <br> You win the game by matching your total score to random number, you lose the game if your score goes above the random number
-        <br> The value of each crystal is hidden from you until you click on it.
-        <br> Each time when the game starts, the game will change the value of each crystal.
+    <!-- Crystal collector jumbotron -->
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center"><strong>CAT COLLECTOR!!</strong></h1>
+                <!-- Main content Row -->
+                <div class="row">
+                    <!-- Instructions container -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Instructions</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p><small>You will be given a random number at the beginnning of the game. There are four cats below. By clicking on a cat you will add a specific amount of points to your local score. You win the game by matching your total score to random number, you lose the game if your score goes above the random number.  The value of each cat is hidden from you until you click on it. Each time when the game starts, the game will change the value of each crystal. In the end, however, with too many collected, nobody wins. </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scores and crystals -->
+                <div class="row">
+                    <!-- target score -->
+                    <div class="col-lg-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Target Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3 class="text-center" id="targetScore">""</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Your score -->
+                    <div class="col-lg-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Your Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <h3 class="text-center" id="yourScore">""</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CRYSTALS -->
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Cat Selection</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img src="assets/images/cat1.jpg" alt="cat1" style="width:100px;height:100px;" id="one">
+                                <img src="assets/images/cat2.jpg" alt="cat2" style="width:100px;height:100px;" id="two">
+                                <img src="assets/images/cat3.jpg" alt="cat3" style="width:100px;height: 100px;" id="three">
+                                <img src="assets/images/cat4.jpg" alt="cat4" style="width:100px;height: 100px;" id="four">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COUNTERS -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Win Count</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="winCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Loss Count</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h3 class="text-center" id="lossCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title text-center ">Computer Points</h3>
-  </div>
-  <div class="panel-body">
-    <span class = "text-center randomNumber">
-  </div>
-</div>
-
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h3 class="panel-title text-center">CAAAAAAAAAAATS!!!!!!</h3>
-  </div>
-  <div class="panel-body">
-    <div class="col-xs-3">
-    <img src="assets/images/cat1.jpg" alt="cat1" style="width:300px;height:300px;">
-    </div>
-    <div class="col-xs-3">
-    <img src="assets/images/cat2.jpg" alt="cat2" style="width:300px;height:300px;">
-    </div>
-    <div class="col-xs-3">
-    <img src="assets/images/cat3.jpg" alt="cat3" style="width:300px;height:300px;">
-    </div>
-    <div class="col-xs-3">
-    <img src="assets/images/cat4.jpg" alt="cat4" style="width:300px;height:300px;">
-    </div>
-  </div>
-</div>
-
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h3 class="panel-title text-center">Your Total Score is: </h3>
-  </div>
-  <div class="panel-body text-center">
-    #######################
-  </div>
-</div>
-
-
-<div class="list-group">
-  <a href="#" class="list-group-item active text-center">
-    Record
-  </a>
-  <a href="#" class="list-group-item text-center wins">Wins: 0
-  </a>
-  <a href="#" class="list-group-item text-center losses">Losses: 0
-  </a>
-</div>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
