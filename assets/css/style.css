@@ -1,19 +1,11 @@
-.container {
-
-}
-.instructions{
-
-}
-.counters {
-
+.jumbotron h1 {
+	font-weight: 300px;
 }
 
-
-
-#winCounter {
-
-}
-
-#loseCounter {
-	
+.panel-body img {
+	width:200px;
+	height:150px;
+	display: inline-flex;
+	text-align: center;
+	margin: 4px;
 }

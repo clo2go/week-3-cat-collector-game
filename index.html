@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Cat Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="assets/css/bootswatch.less" type="text/css" rel="stylesheet">
     <link href="assets/css/variables.less" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,14 +21,14 @@
     <div class="container-fluid">
         <div class="jumbotron">
             <div class="container-fluid">
-                <h1 class="text-center"><strong>CAT COLLECTOR!!</strong></h1>
+                <h1 class="text-center">I Can Collectz All Da Cats</h1>
                 <!-- Main content Row -->
                 <div class="row">
                     <!-- Instructions container -->
                     <div class="col-lg-12">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title text-center">Instructions</h3>
+                                <h2 class="panel-title text-center">Instructions</h2>
                             </div>
                             <div class="panel-body">
                                 <p><small>You will be given a random number at the beginnning of the game. There are four cats below. By clicking on a cat you will add a specific amount of points to your local score. You win the game by matching your total score to random number, you lose the game if your score goes above the random number.  The value of each cat is hidden from you until you click on it. Each time when the game starts, the game will change the value of each crystal. In the end, however, with too many collected, nobody wins. </small></p>
@@ -36,71 +36,76 @@
                         </div>
                     </div>
                 </div>
-                <!-- Scores and crystals -->
+            </div>
+                <!-- CATS -->
+            <div class="container-fluid">
                 <div class="row">
-                    <!-- target score -->
-                    <div class="col-lg-3">
+                    <div class="col-lg-12">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title text-center">Target Score</h3>
-                            </div>
-                            <div class="panel-body">
-                                <h3 class="text-center" id="targetScore">""</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Your score -->
-                    <div class="col-lg-3">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title text-center">Your Score</h3>
-                            </div>
-                            <div class="panel-body">
-                                <h3 class="text-center" id="yourScore">""</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- CRYSTALS -->
-                    <div class="col-lg-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title text-center">Cat Selection</h3>
+                                <h2 class="panel-title text-center">Cat Selection</h2>
                             </div>
                             <div class="panel-body text-center">
-                                <img src="assets/images/cat1.jpg" alt="cat1" style="width:100px;height:100px;" id="one">
-                                <img src="assets/images/cat2.jpg" alt="cat2" style="width:100px;height:100px;" id="two">
-                                <img src="assets/images/cat3.jpg" alt="cat3" style="width:100px;height: 100px;" id="three">
-                                <img src="assets/images/cat4.jpg" alt="cat4" style="width:100px;height: 100px;" id="four">
+                                <img src="assets/images/cat1.jpg" alt="cat1" id="one">
+                                <img src="assets/images/cat2.jpg" alt="cat2" id="two">
+                                <img src="assets/images/cat3.jpg" alt="cat3" id="three">
+                                <img src="assets/images/cat4.jpg" alt="cat4" id="four">
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- COUNTERS -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">Win Count</h3>
-                        </div>
-                        <div class="panel-body">
-                            <h3 class="text-center" id="winCount">0</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">Loss Count</h3>
-                        </div>
-                        <div class="panel-body">
-                            <h3 class="text-center" id="lossCount">0</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    <div class="container-fluid">
+        <!-- Scores and crystals -->
+        <div class="row">
+            <!-- target score -->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title text-center">Target Score</h1>
+                    </div>
+                    <div class="panel-body">
+                        <h1 class="text-center" id="targetScore">""</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Your score -->
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title text-center">Your Score</h1>
+                    </div>
+                    <div class="panel-body">
+                        <h1 class="text-center" id="yourScore">""</h1>
+                    </div>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <!-- COUNTERS -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title text-center">Win Count</h1>
+                        </div>
+                        <div class="panel-body">
+                            <h1 class="text-center" id="winCount">0</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title text-center">Loss Count</h1>
+                        </div>
+                        <div class="panel-body">
+                            <h1 class="text-center" id="lossCount">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
