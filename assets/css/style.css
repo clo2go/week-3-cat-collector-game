@@ -1,4 +1,4 @@
-.jumbotron h1 {
+/* .jumbotron h1 {
 	font-weight: 300px;
 }
 
@@ -9,3 +9,192 @@
 	text-align: center;
 	margin: 4px;
 }
+ */
+
+/* NAVBAR CSS */
+/* ############################### */
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: aquamarine;
+  margin: 20px 0;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 15%;
+  color: #266048;
+}
+
+nav>ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0;
+}
+
+nav>ul li {
+  list-style: none;
+
+}
+
+nav>ul li a {
+  color: #749b8b;
+  padding: 10px;
+  margin: 0 5px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  transition: .3s all;
+}
+
+nav>ul li a:hover {
+  border: 2px solid #333;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.rightnav {
+  margin-left: auto
+}
+
+.leftnav nav {
+  display: flex;
+}
+/* CARDS CSS */
+/* ################################ */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 31%;
+  flex-grow: 1;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.3);
+
+}
+
+.card-header,
+.card-footer {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.card-body {
+  border-top: 1px aquamarine;
+  border-bottom: 1px aquamarine;
+  background: mediumaquamarine;
+  flex: auto;
+  padding: 10px;
+  color: #266048;
+}
+
+.card-footer {
+  margin-top: auto;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer
+}
+
+.card-footer:active {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+/* TITLE CSS */
+/* ############################# */
+ .container {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+
+ .grid-container {
+   width: 80%;
+   height: 80vh;
+   display: grid;
+   grid-template-columns: 1fr 200px 200px 1fr;
+   grid-template-rows: 1fr 200px 200px 1fr;
+   padding-top: 1em;
+ }
+
+ .grid-item {
+   width: 100%;
+   grid-template-columns: repeat(16, 1fr);
+   grid-template-rows: repeat(16, 1fr);
+   justify-content: center;
+   align-items: center;
+   font-size: 35px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: var(--aquamarine);
+ }
+
+ /* .grid-item>div {
+   border: var(--aquamarine) solid 8px;
+   grid-row: 4 / 14;
+   grid-column: 2 / -2;
+ } */
+
+ .item-1 {
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+   background: url("../images/cat1.jpg");
+   background-size: cover;
+ }
+
+ .item-2 {
+   grid-column: 3 / -1;
+   grid-row: 1 / 3;
+   background: url("../images/cat2.jpg");
+   background-size: cover;
+
+ }
+
+ .item-3 {
+   grid-column: 1 / 3;
+   grid-row: 3 / -1;
+   background: url("../images/cat3.jpg");
+   background-size: cover;
+ }
+
+ .item-4 {
+   grid-column: 3 / -1;
+   grid-row: 3 / -1;
+   background: url("../images/cat4.jpg");
+   background-size: cover;
+ }
+
+ .item-5 {
+   grid-column: 2 / 4;
+   grid-row: 2 / 4;
+   background: rgba(0, 0, 0, 0.8);
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   justify-items: center;
+   border-radius: 50%;
+   border: 15px double aquamarine;
+   text-align: center;
+ }
+
+ /* FOOTER */
+ /* ######################### */
+
+ footer {
+   background: aquamarine;
+   margin: 20px 0;
+   border-radius: 20px;
+   padding-left: 10%;
+   padding-right: 15%;
+   color: #266048;
+   /* text-align: center; */
+ }
