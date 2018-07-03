@@ -74,7 +74,7 @@ nav>ul li a:hover {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  flex-basis: 31%;
+  flex-basis: 25%;
   flex-grow: 1;
   margin: 10px;
   background: rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ nav>ul li a:hover {
 /* TITLE CSS */
 /* ############################# */
  .container {
-   min-height: 100vh;
+   min-height: 80vh;
    display: flex;
    justify-content: center;
    align-content: center;
