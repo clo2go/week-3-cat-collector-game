@@ -66,7 +66,7 @@ var addValues = function(cats) {
   currentScore = currentScore + cats.value;
   //Change the html to reflect changes in the current score.
   $("#yourScore").html(currentScore);
-  //Call check win 
+  //Call check win
   checkWin();
   // Testing Console
   console.log("your current score: " + currentScore);
@@ -74,10 +74,10 @@ var addValues = function(cats) {
 };
 
 var checkWin = function() {
-  //Check if current score 
+  //Check if current score
 
   if (currentScore > targetScore) {
-    
+
     console.log("You lost!");
     alert("Sorry, you lost. :(");
     //add to loss counter
@@ -96,7 +96,7 @@ var checkWin = function() {
     winCount++;
     //change win count
     $("#winCount").html(winCount);
-    
+
     //Restart the game
     startGame();
 
