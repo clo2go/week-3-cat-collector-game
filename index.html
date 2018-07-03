@@ -11,121 +11,130 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/bootswatch.less" type="text/css" rel="stylesheet">
-    <link href="assets/css/variables.less" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="shortcut icon" href="clo-emoji-favicon.jpg">
+    <link rel="shortcut icon" href="./assets/images/clopic-pink-favi.png">
 </head>
 
 <body>
+
     <body>
-
-      <div class="container">
-        <div class="grid-container">
-          <div class="grid-item item-1"></div>
-          <div class="grid-item item-2"></div>
-          <div class="grid-item item-3"></div>
-          <div class="grid-item item-4"></div>
-          <div class="grid-item item-5">
-            <h2>Click a cat, any cat!</h2>
-          </div>
+        <!-- Menu Navbar -->
+        <div class="leftnav">
+            <h3>Navbar to nowhere...for now</h3>
+            <nav>
+                <h4>Carlos Catman Menu</h4>
+                <ul class="rightnav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Rules</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    <!-- Crystal collector jumbotron -->
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <div class="container-fluid">
-                <h1 class="text-center">I Can Collectz All Da Cats</h1>
-                <!-- Main content Row -->
-                <div class="row">
-                    <!-- Instructions container -->
-                    <div class="col-lg-12">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h2 class="panel-title text-center">Instructions</h2>
-                            </div>
-                            <div class="panel-body">
-                                <p><small>You will be given a random number at the beginnning of the game. There are four cats below. By clicking on a cat you will add a specific amount of points to your local score. You win the game by matching your total score to random number, you lose the game if your score goes above the random number.  The value of each cat is hidden from you until you click on it. Each time when the game starts, the game will change the value of each crystal. In the end, however, with too many collected, nobody wins. </small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- INSTRUCTION CARD -->
+        <div class="card">
+            <div class="card-header">
+                <h3>What's going on here??!!</h3>
             </div>
-                <!-- CATS -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h2 class="panel-title text-center">Cat Selection</h2>
-                            </div>
-                            <div class="panel-body text-center">
-                                <img src="assets/images/cat1.jpg" alt="cat1" id="one">
-                                <img src="assets/images/cat2.jpg" alt="cat2" id="two">
-                                <img src="assets/images/cat3.jpg" alt="cat3" id="three">
-                                <img src="assets/images/cat4.jpg" alt="cat4" id="four">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-body">
+                You will be given a random number at the beginnning of the game. There are four cats below. By clicking on a cat you will add a specific amount of points to your local score. You win the game by matching your total score to random number, you lose the game if your score goes above the random number. The value of each cat is hidden from you until you click on it. Each time when the game starts, the game will change the value of each crystal. In the end, however, with too many collected, nobody wins.
+            </div>
+            <div class="card-footer">
+                <h3>How many cats will you end up with?</h3>
             </div>
         </div>
-    <div class="container-fluid">
-        <!-- Scores and crystals -->
-        <div class="row">
-            <!-- target score -->
-            <div class="col-lg-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h1 class="panel-title text-center">Target Score</h1>
-                    </div>
-                    <div class="panel-body">
-                        <h1 class="text-center" id="targetScore">""</h1>
+        <!-- Title -------------------->
+            <div class="container">
+                <div class="grid-container">
+                    <div class="grid-item item-1" id="one"></div>
+                    <div class="grid-item item-2" id="two"></div>
+                    <div class="grid-item item-3" id="three"></div>
+                    <div class="grid-item item-4" id="four"></div>
+                    <div class="grid-item item-5">
+                        <h2>Click a cat, any cat!</h2>
                     </div>
                 </div>
             </div>
-            <!-- Your score -->
-            <div class="col-lg-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h1 class="panel-title text-center">Your Score</h1>
+        <!-- SCORE CARD CONTAINER     -->
+        <div class="#">
+        <!-- Target Score (TOP LEFT)-->
+            <div class="#">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Target Score</h3>
                     </div>
-                    <div class="panel-body">
-                        <h1 class="text-center" id="yourScore">""</h1>
+                    <div class="card-body" id="targetScore">
+                    </div>
+                    <div class="card-footer">
+                        <h3></h3>
                     </div>
                 </div>
             </div>
-        <div class="container-fluid">
-            <!-- COUNTERS -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h1 class="panel-title text-center">Win Count</h1>
-                        </div>
-                        <div class="panel-body">
-                            <h1 class="text-center" id="winCount">0</h1>
-                        </div>
+            <!-- YOUR SCORE CARD (TOP RIGHT) -->
+            <div class="#">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Your Score</h3>
+                    </div>
+                    <div class="card-body" id="yourScore">
+                        SCORE WILL GO HERE
+                    </div>
+                    <div class="card-footer">
+                        <h3></h3>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h1 class="panel-title text-center">Loss Count</h1>
-                        </div>
-                        <div class="panel-body">
-                            <h1 class="text-center" id="lossCount">0</h1>
-                        </div>
+            </div>
+            <!-- WIN COUNT (BOTTOM LEFT) -->
+            <div class="#">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Win Count</h3>
+                    </div>
+                    <div class="card-body" id="winCount">
+                        0
+                    </div>
+                    <div class="card-footer">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- LOSS COUNT (BOTTOM RIGHT) -->
+            <div class="#">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Loss Count</h3>
+                    </div>
+                    <div class="card-body" id="lossCount">
+                        0
+                    </div>
+                    <div class="card-footer">
+                        <h3></h3>
                     </div>
                 </div>
             </div>
         </div>
-
-
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+                <div class="footer">
+                    <footer>
+                        <div>
+                            <h4>CLO2GO</h4>
+                        </div>
+                    </footer>
+                </div>
+                <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
 
 </html>
